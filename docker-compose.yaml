@@ -10,4 +10,4 @@ services:
     volumes:
       - ./data:/var/lib/mysql
       - ./sakila-db/sakila-schema.sql:/docker-entrypoint-initdb.d/00-sakila-schema.sql
-      - ./sakila-data.sql:/docker-entrypoint-initdb.d/01-sakila-data.sql
+      - ./sakila-db/sakila-data.sql:/docker-entrypoint-initdb.d/01-sakila-data.sql
